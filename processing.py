@@ -36,17 +36,17 @@ def load_val_data(dataset_dir, CLASS_NAMES):
 
 augment_layers = tf.keras.Sequential([
     RandomFlip(mode = 'horizontal'),
-    # RandomRotation(factor = (-0,2, 0.2)),
-    # RandomContrast(0.5),
-    Rescaling(1./225)
+    RandomRotation(factor = (-0,2, 0.2)),
+    RandomContrast(0.5),
+    # Rescaling(1./225)
 ])
 
 def augment_layers(image, label):
     augment_layers = tf.keras.Sequential([
     RandomFlip(mode = 'horizontal'),
-    # RandomRotation(factor = (-0,2, 0.2)),
-    # RandomContrast(0.5),
-    Rescaling(1./225)
+    RandomRotation(factor = (-0,2, 0.2)),
+    RandomContrast(0.5),
+    # Rescaling(1./225)
     ])
     return augment_layers(image, training = True), label
 
