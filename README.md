@@ -1,5 +1,5 @@
 ## Facial Emotion Recognition
-Emotion Recognition is a project aims to recognize human facial emotions in real-time using deep learning technology. I used a model that had been trained on a dataset of faces with emotion labels.<br>
+Emotion Recognition is a project aims to recognize human facial emotions in real-time using deep learning technology. I used a model that had been trained on a dataset of faces with emotion labels. I got 93% accuracy using Transfer Learning Technique from EfficientNet<br>
 
 
 > Demo<br>
